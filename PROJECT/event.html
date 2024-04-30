@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>event</title>
+  
+  <!-- JavaScript validation and content load for insert data-->
+        <script>
+            function confirmInsert() {
+                return confirm('Are you sure you want to insert this record?');
+            }
+        </script>
+</head>
+<body>
+	<body style="background-image: url('./mo.jpg');">
+<body style="background-image: url('.pic.jpeg');">
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;"><a href="./home.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">HOME</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">ABOUT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">CONTACT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./booking.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">BOOKING</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./event.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">EVENT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./payment.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">PAYMENT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./notification.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">NOTIFICATION</a></li>
+     <li style="display: inline; margin-right: 10px;"><a href="./report.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">REPORT</a></li>
+
+  <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: white; background-color: darkgreen; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+  <!-- <div class="col-3 offset">-->
+		<h1>event Form</h1>
+<form method="POST" action="event.php" onsubmit="return confirmInsert();">
+
+<label for="event id">event Id:</label>
+<input type="number" id="event id" name="eventid" required><br><br>
+
+<label for="event name">event name:</label>
+<input type="text" id="event name" name="eventname" required><br><br>
+
+<label for="event time">event time:</label>
+<input type="text" id="event time" name="eventtime" required><br><br>
+
+<label for="event date">event date:</label>
+<input type="date" id="eventdate" name="eventdate" required><br><br>
+
+<label for="event location">event location:</label>
+<input type="text" id="event location" name="eventlocation" required><br><br>
+
+<label for="event description">event description:</label>
+<input type="text" id="event description" name="eventdescription" required><br><br>
+
+<label for="event capacity">event capacity:</label>
+<input type="text" id="event capacity" name="eventcapacity" required><br><br>
+
+
+<label for="ticket prce"> ticket price:</label>
+<input type="text" id="ticket price" name="ticketprice" required><br><br>
+
+
+<input type="submit" name="add" value="Insert">
+<input type="submit" name="add" value="delete"><br><br>
+
+
+
+<a href="./home.html">Go Back to Home</a>
+
+</form>
+</body>
+</html>

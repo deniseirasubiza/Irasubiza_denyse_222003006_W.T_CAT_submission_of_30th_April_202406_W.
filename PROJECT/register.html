@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body style="background-image: url('./ma.jpg');">
+    <center>
+    <h5> REGISTER INFORMATION</h5>
+<<form action="register.php" method="POST"> <br><br><br>
+        <label>FirstName:</label>
+        <input type="text" name="fname" placeholder="enter your firstname"required><br><br>
+
+        <label>LastName:</label>
+        <input type="text" name="lname" placeholder="enter your lastname" required><br><br>
+
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="enter your username" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gend" value="male" checked>Male
+        <input type="radio" name="gend" value="female">Female<br><br>
+       
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="enter your email" required><br><br>
+
+        <label>Telephone:</label>
+        <input type="text" name="telephone" placeholder="enter your telephone" required><br><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="enter your password" required><br><br>
+
+        <label>Activation_code:</label>
+        <input type="text" name="activation_code" placeholder="enter activation_code"required><br><br>
+
+        <input type="submit" name="register" value="Register">
+        <input type="reset" name="cancel" value="Cancel">
+    </form>
+</center>
+</body>
+
+</html>
